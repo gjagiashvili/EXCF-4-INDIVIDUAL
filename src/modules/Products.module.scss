@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  flex: 0 1 calc(23% - 16px);
+  margin-bottom: 16px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.card:hover .add-to-cart-button {
+  bottom: 0;
+}
+
+.favoriteButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heartIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.img {
+  width: 300px;
+  height: 250px;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.title {
+  width: 300px;
+  height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-left: -50px;
+  color: #000000;
+}
+
+.underInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: red;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.star,
+.gray-star {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  margin-right: 4px;
+}
+
+.star {
+  background-image: url("../assets/fill-star.png");
+}
+
+.gray-star {
+  background-image: url("../assets/empty-star.png");
+}
+
+.add-to-cart-button {
+  position: absolute;
+  width: 290px;
+  height: 40px;
+  margin-bottom: 140px;
+  margin-left: 18px;
+  align-content: center;
+  left: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 4px 4px 4px 4px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.card:hover .add-to-cart-button {
+  bottom: -30px;
+  opacity: 1;
+}
+
+.colorButton {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 4px;
+  cursor: pointer;
+  border: 0.5px solid black;
+}
+
+.options {
+  margin-right: 195px;
+}
+
+.favoriteButton {
+  background-color: white;
+  color: white;
+  margin-top: 10px;
+}
+
+.favoriteButton:hover {
+  background-color: grey;
+  color: grey;
+  margin-top: 10px;
+}
+
+.category-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 4px 8px;
+  background-color: #00FF66;
+  color: white;
+  border-radius: 4px;
+}
